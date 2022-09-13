@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        AppCenter.start(application, "dad01173-aa9d-43d8-b7ea-df1b7bec99b0", Analytics::class.java, Crashes::class.java)
+        AppCenter.start(application, "8b3e1fcb-8378-4f3a-b09b-ac30cc0661ab", Analytics::class.java, Crashes::class.java)
 
         val future = Crashes.hasCrashedInLastSession()
         future.thenAccept(AppCenterConsumer {
